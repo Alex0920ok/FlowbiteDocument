@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.convertkit.com	TRUE	/	FALSE	1999999999	__cf_bm	6.zN2IT25IrgRndevr9k9khiRahda2DHsL6H.Vu3p0A-1726505688-1.0.1.1-mhz6qH.AIhJdw_6rpLOQNFJ9eKvULMDFO1lb.gfQ2EpjEFzPGHYU3s7viGUZ6tTjoo6VeZd33QrDY6UKJSFAsOBCG_wis8.3_W91U5s9kxQ
+f.convertkit.com	TRUE	/	FALSE	1999999999	SameSite	None
+

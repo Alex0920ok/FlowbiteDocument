@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from flowbite.com/docs/getting-started/next-js/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 16:54:56 GMT -->
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn how to install Tailwind CSS with Flowbite for your Next.js project and start developing with the most popular React-based framework built by Vercel">
+<meta name="author" content="Themesberg">
+<meta name="generator" content="Hugo 0.75.1">
+
+<title>Tailwind CSS Next.js - Flowbite</title>
+
+<link rel="canonical" href="index.html">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
+<link rel="stylesheet" href="../../flowbite5d5d.css?v=2.5.1a">
+<link rel="stylesheet" href="../../docs5d5d.css?v=2.5.1a">
+<link rel="apple-touch-icon" sizes="57x57" href="../../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="https://flowbite.com/docs/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://flowbite.com/ms-icon-144x144.png/">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Tailwind CSS Next.js - Flowbite">
+<meta name="twitter:description" content="Learn how to install Tailwind CSS with Flowbite for your Next.js project and start developing with the most popular React-based framework built by Vercel">
+<meta name="twitter:image" content="../../images/og-image.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="Tailwind CSS Next.js - Flowbite">
+<meta property="og:description" content="Learn how to install Tailwind CSS with Flowbite for your Next.js project and start developing with the most popular React-based framework built by Vercel">
+<meta property="og:type" content="article">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:image:type" content="image/png">
+
+
+
+
+
+<script src="../../../../cdn.usefathom.com/script.js" data-site="UGPDODOP" defer></script>
+
+
+<script>
+    
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+</head>
+
+
+<body class="dark:bg-gray-900 antialiased">
+  
+
+  
+
+<header class="sticky top-0 z-40 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
+  <div
+      id='banner'
+      tabIndex='-1'
+      class='z-50 flex justify-center w-full px-4 py-3 border border-b border-gray-200 bg-gray-50 dark:border-gray-600 lg:py-4 dark:bg-gray-700'>
+      <div class='items-center md:flex'>
+        <p class='text-sm font-medium text-gray-900 md:my-0 dark:text-white'>
+          <span class='bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 hidden md:inline'>New</span>
+          We have launched Flowbite Blocks featuring over 430+ website sections!
+            <a href="https://flowbite.com/blocks/" class='inline-flex items-center ml-2 text-sm font-medium text-blue-600 md:ml-2 dark:text-blue-500 hover:underline'>
+              Check it out
+              <svg class="w-3 h-3 ml-1.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+        </p>
+      </div>
+  </div>
+  <div class="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-8xl lg:px-4">
+    <div class="flex items-center">
+      <button id="toggleSidebarMobile" aria-expanded="true" aria-controls="sidebar" class="p-2 mr-2 text-gray-500 rounded cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <svg id="toggleSidebarMobileHamburger" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        <svg id="toggleSidebarMobileClose" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="flex items-center justify-between">
+        <a href="https://flowbite.com/" class="flex">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        </a>
+      </div>
+      <div id="docsearch" class="hidden md:flex ml-6 xl:ml-20"></div>
+    </div>
+
+    <div class="flex items-center">
+      <ul id="flowbiteMenu" class="flex-col hidden pt-6 lg:flex-row lg:self-center lg:py-0 lg:flex">
+        <li class="mb-3 lg:px-2 xl:px-2 lg:mb-0">
+          <a href="../quickstart/index.html" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Quickstart</a>
+        </li>
+        <li class="mb-3 lg:px-2 xl:px-2 lg:mb-0">
+          <a href="https://flowbite.com/blocks/" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Blocks</a>
+        </li>
+        <li class="mb-3 lg:px-2 xl:px-2 lg:mb-0">
+          <a href="https://flowbite.com/figma/" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Figma</a>
+        </li>
+        <li class="mb-3 lg:px-2 xl:px-2 lg:mb-0">
+          <a href="https://flowbite.com/icons/" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Icons</a>
+        </li>
+        <li class="mb-3 lg:px-2 xl:px-2 lg:mb-0">
+          <a href="https://flowbite.com/blog/" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Blog</a>
+        </li>
+        <li class="hidden mb-3 lg:px-2 xl:px-2 lg:mb-0 xl:block">
+          <a href="https://flowbite.com/pro/" class="text-sm font-medium text-gray-900 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-500">Pro version</a>
+        </li>
+      </ul>
+      <div id="docsearch-mobile" class="sm:hidden"></div>
+      <a href="https://github.com/themesberg/flowbite" data-tooltip-target="tooltip-github-2" class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-[1.1rem] h-[1.1rem]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+        </svg>
+        <span class="sr-only">View on Github</span>
+      </a>
+      <div id="tooltip-github-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+          View on Github
+          <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <a href="https://discord.gg/4eeurUVvTy" data-tooltip-target="tooltip-discord-2" class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+          <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+        </svg>
+        <span class="sr-only">Join Discord community</span>
+      </a>
+      <div id="tooltip-discord-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+        Join community on Discord
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <a href="https://www.youtube.com/channel/UC_Ms4V2kYDsh7F_CSsHyQ6A" data-tooltip-target="tooltip-youtube" class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+          <path fill-rule="evenodd" d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z" clip-rule="evenodd"/>
+        </svg>
+        <span class="sr-only">Flowbite YouTube</span>
+      </a>
+      <div id="tooltip-youtube" role="tooltip" class="absolute z-10 invisible inline-flex px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+        Subscribe to YouTube channel
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <a href="https://twitter.com/zoltanszogyenyi" data-tooltip-target="tooltip-twitter" class="hidden sm:inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-4.5 h-4.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"/>
+        </svg>
+        <span class="sr-only">Flowbite on Twitter/X</span>
+      </a>
+      <div id="tooltip-twitter" role="tooltip" class="absolute z-10 invisible inline-flex px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+        Follow us on Twitter/X
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <button id="theme-toggle" data-tooltip-target="tooltip-toggle" type="button" class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+          <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"/>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-11a1 1 0 0 0 1-1V1a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm0 12a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1ZM4.343 5.757a1 1 0 0 0 1.414-1.414L4.343 2.929a1 1 0 0 0-1.414 1.414l1.414 1.414Zm11.314 8.486a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM4 10a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm15-1h-2a1 1 0 1 0 0 2h2a1 1 0 0 0 0-2ZM4.343 14.243l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414a1 1 0 0 0-1.414-1.414ZM14.95 6.05a1 1 0 0 0 .707-.293l1.414-1.414a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 .707 1.707Z"/>
+        </svg>
+        <span class="sr-only">Toggle dark mode</span>
+      </button>
+      <div id="tooltip-toggle" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+          Toggle dark mode
+          <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+      <a href="https://flowbite.com/pro/#pricing"  class="xl:hidden inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 sm:ml-3">Pricing</a>
+      <a href="https://flowbite.com/pro/#pricing"  class="hidden xl:inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 sm:ml-3">Pricing & FAQ</a>
+    </div>
+  </div>
+</header>
+
+
+<div class="w-full px-4 mx-auto max-w-8xl">
+  <div class="lg:flex">
+    
+    <aside id="sidebar" class="fixed inset-0 z-20 flex-none hidden h-full w-72 lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-48 lg:block" aria-labelledby="sidebar-label">
+      <h4 id="sidebar-label" class="sr-only">Browse docs</h4>
+      <div id="navWrapper" class="overflow-y-auto z-20 h-full bg-white scrolling-touch max-w-2xs lg:h-[calc(100vh-3rem)] lg:block lg:sticky top:24 lg:top-28 dark:bg-gray-900 lg:mr-0">
+  <nav id="nav" class="pt-16 px-1 pl-3 lg:pl-0 lg:pt-2 font-normal text-base lg:text-sm pb-10 lg:pb-20 sticky?lg:h-(screen-18)" aria-label="Docs navigation"><ul class="mb-0 list-unstyled">
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Getting started</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../introduction/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Introduction </a>
+              </li>
+              <li>
+                <a href="../quickstart/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Quickstart </a>
+              </li>
+              <li>
+                <a href="../javascript/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">JavaScript <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../typescript/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">TypeScript </a>
+              </li>
+              <li>
+                <a href="../license/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">License </a>
+              </li>
+              <li>
+                <a href="../changelog/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Changelog </a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Integration guides</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../react/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">React </a>
+              </li>
+              <li>
+                <a href="index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white  !text-blue-700 hover:!text-blue-700 dark:!text-blue-500 dark:hover:!text-blue-500" aria-current="page">Next.js </a>
+              </li>
+              <li>
+                <a href="../vue/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Vue </a>
+              </li>
+              <li>
+                <a href="../nuxt-js/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Nuxt </a>
+              </li>
+              <li>
+                <a href="../svelte/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Svelte </a>
+              </li>
+              <li>
+                <a href="../angular/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Angular <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../astro/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Astro </a>
+              </li>
+              <li>
+                <a href="../remix/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Remix </a>
+              </li>
+              <li>
+                <a href="../meteor-js/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Meteor.js <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../gatsby/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Gatsby </a>
+              </li>
+              <li>
+                <a href="../solid-js/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">SolidJS </a>
+              </li>
+              <li>
+                <a href="../qwik/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Qwik </a>
+              </li>
+              <li>
+                <a href="../laravel/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Laravel <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../symfony/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Symfony </a>
+              </li>
+              <li>
+                <a href="../rails/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Rails </a>
+              </li>
+              <li>
+                <a href="../phoenix/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Phoenix </a>
+              </li>
+              <li>
+                <a href="../django/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Django </a>
+              </li>
+              <li>
+                <a href="../flask/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Flask </a>
+              </li>
+              <li>
+                <a href="../blazor/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Blazor <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Customize</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../../customize/configuration/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Configuration </a>
+              </li>
+              <li>
+                <a href="../../customize/dark-mode/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Dark Mode </a>
+              </li>
+              <li>
+                <a href="../../customize/theming/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Theming </a>
+              </li>
+              <li>
+                <a href="../../customize/colors/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Colors </a>
+              </li>
+              <li>
+                <a href="../../customize/icons/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Icons </a>
+              </li>
+              <li>
+                <a href="../../customize/rtl/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">RTL <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../customize/optimization/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Optimization </a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Components</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../../components/accordion/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Accordion </a>
+              </li>
+              <li>
+                <a href="../../components/alerts/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Alerts </a>
+              </li>
+              <li>
+                <a href="../../components/avatar/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Avatar </a>
+              </li>
+              <li>
+                <a href="../../components/badge/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Badge </a>
+              </li>
+              <li>
+                <a href="../../components/banner/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Banner </a>
+              </li>
+              <li>
+                <a href="../../components/bottom-navigation/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Bottom Navigation </a>
+              </li>
+              <li>
+                <a href="../../components/breadcrumb/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Breadcrumb </a>
+              </li>
+              <li>
+                <a href="../../components/buttons/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Buttons </a>
+              </li>
+              <li>
+                <a href="../../components/button-group/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Button Group </a>
+              </li>
+              <li>
+                <a href="../../components/card/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Card </a>
+              </li>
+              <li>
+                <a href="../../components/carousel/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Carousel </a>
+              </li>
+              <li>
+                <a href="../../components/chat-bubble/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Chat Bubble <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../components/clipboard/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Clipboard <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../components/datepicker/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Datepicker </a>
+              </li>
+              <li>
+                <a href="../../components/device-mockups/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Device Mockups </a>
+              </li>
+              <li>
+                <a href="../../components/drawer/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Drawer </a>
+              </li>
+              <li>
+                <a href="../../components/dropdowns/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Dropdowns </a>
+              </li>
+              <li>
+                <a href="../../components/footer/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Footer </a>
+              </li>
+              <li>
+                <a href="../../components/forms/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Forms </a>
+              </li>
+              <li>
+                <a href="../../components/gallery/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Gallery </a>
+              </li>
+              <li>
+                <a href="../../components/indicators/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Indicators </a>
+              </li>
+              <li>
+                <a href="../../components/jumbotron/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Jumbotron </a>
+              </li>
+              <li>
+                <a href="../../components/kbd/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">KBD </a>
+              </li>
+              <li>
+                <a href="../../components/list-group/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">List Group </a>
+              </li>
+              <li>
+                <a href="../../components/mega-menu/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Mega Menu </a>
+              </li>
+              <li>
+                <a href="../../components/modal/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Modal </a>
+              </li>
+              <li>
+                <a href="../../components/navbar/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Navbar </a>
+              </li>
+              <li>
+                <a href="../../components/pagination/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Pagination </a>
+              </li>
+              <li>
+                <a href="../../components/popover/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Popover </a>
+              </li>
+              <li>
+                <a href="../../components/progress/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Progress </a>
+              </li>
+              <li>
+                <a href="../../components/rating/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Rating </a>
+              </li>
+              <li>
+                <a href="../../components/sidebar/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Sidebar </a>
+              </li>
+              <li>
+                <a href="../../components/skeleton/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Skeleton </a>
+              </li>
+              <li>
+                <a href="../../components/speed-dial/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Speed Dial </a>
+              </li>
+              <li>
+                <a href="../../components/spinner/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Spinner </a>
+              </li>
+              <li>
+                <a href="../../components/stepper/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Stepper </a>
+              </li>
+              <li>
+                <a href="../../components/tables/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Tables </a>
+              </li>
+              <li>
+                <a href="../../components/tabs/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Tabs </a>
+              </li>
+              <li>
+                <a href="../../components/timeline/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Timeline </a>
+              </li>
+              <li>
+                <a href="../../components/toast/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Toast </a>
+              </li>
+              <li>
+                <a href="../../components/tooltips/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Tooltips </a>
+              </li>
+              <li>
+                <a href="../../components/typography/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Typography </a>
+              </li>
+              <li>
+                <a href="../../components/video/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Video </a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Forms</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../../forms/input-field/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Input Field </a>
+              </li>
+              <li>
+                <a href="../../forms/file-input/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">File Input </a>
+              </li>
+              <li>
+                <a href="../../forms/search-input/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Search Input </a>
+              </li>
+              <li>
+                <a href="../../forms/number-input/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Number Input <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../forms/phone-input/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Phone Input <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../forms/select/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Select </a>
+              </li>
+              <li>
+                <a href="../../forms/textarea/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Textarea </a>
+              </li>
+              <li>
+                <a href="../../forms/timepicker/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Timepicker <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+              <li>
+                <a href="../../forms/checkbox/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Checkbox </a>
+              </li>
+              <li>
+                <a href="../../forms/radio/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Radio </a>
+              </li>
+              <li>
+                <a href="../../forms/toggle/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Toggle </a>
+              </li>
+              <li>
+                <a href="../../forms/range/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Range </a>
+              </li>
+              <li>
+                <a href="../../forms/floating-label/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Floating Label </a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Typography</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../../typography/headings/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Headings </a>
+              </li>
+              <li>
+                <a href="../../typography/paragraphs/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Paragraphs </a>
+              </li>
+              <li>
+                <a href="../../typography/blockquote/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Blockquote </a>
+              </li>
+              <li>
+                <a href="../../typography/images/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Images </a>
+              </li>
+              <li>
+                <a href="../../typography/lists/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Lists </a>
+              </li>
+              <li>
+                <a href="../../typography/links/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Links </a>
+              </li>
+              <li>
+                <a href="../../typography/text/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Text </a>
+              </li>
+              <li>
+                <a href="../../typography/hr/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">HR </a>
+              </li>
+          </ul>
+        </li>
+        <li class="mt-8">
+          <h5 class="mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs dark:text-white">Plugins</h5>
+          <ul class="py-1 list-unstyled fw-normal small">
+              <li>
+                <a href="../../plugins/charts/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Charts </a>
+              </li>
+              <li>
+                <a href="../../plugins/datatables/index.html" data-sidebar-item class="py-2 transition-colors duration-200 relative flex items-center flex-wrap font-medium hover:text-gray-900 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Datatables <span><span class="bg-blue-100 text-blue-800 text-2xs font-semibold ml-2 px-1.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-100 dark:border-blue-400">NEW</span></span></a>
+              </li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+</div>
+
+
+    </aside>
+
+    <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/60" id="sidebarBackdrop"></div>
+
+    <main id="content-wrapper" class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+      <div class="flex w-full">
+
+        
+        <div class="flex-auto max-w-4xl min-w-0 pt-6 lg:px-8 lg:pt-8 pb:12 xl:pb-24 lg:pb-16">
+
+          
+          <div class="pb-4 mb-8 border-b border-gray-200 dark:border-gray-800">
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <aside class="mb-5" aria-label="Integration requires Next.js">
+                <span class="inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white">
+                <span class="px-3 py-px mr-3 text-xs text-white bg-white rounded-full">
+                  <svg class="w-6 h-6" aria-hidden="true" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Black-Next.js" transform="translate(-247.000000, -138.000000)" fill="#000000" fill-rule="nonzero">
+                            <g id="next-black" transform="translate(247.000000, 138.000000)">
+                                <g id="EXT-+-Type-something">
+                                    <path d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z" id="EXT"></path>
+                                    <polygon id="Type-something" points="0.202923647 32.6320058 4.66697141 32.6320058 66.2235778 124.303087 40.785176 90.5343303 3.93649086 37.0111732 3.77416185 90.5343303 0.202923647 90.5343303"></polygon>
+                                </g>
+                                <path d="M183.396622,86.5227221 C184.134938,86.5227221 184.673474,85.9601075 184.673474,85.233037 C184.673474,84.5059658 184.134938,83.9433513 183.396622,83.9433513 C182.666993,83.9433513 182.11977,84.5059658 182.11977,85.233037 C182.11977,85.9601075 182.666993,86.5227221 183.396622,86.5227221 Z M186.905793,83.1297235 C186.905793,85.2763149 188.460599,86.678523 190.727662,86.678523 C193.142388,86.678523 194.601647,85.233037 194.601647,82.7229099 L194.601647,73.8855335 L192.655968,73.8855335 L192.655968,82.7142542 C192.655968,84.1078073 191.952397,84.8521899 190.710289,84.8521899 C189.598473,84.8521899 188.842785,84.1597409 188.816727,83.1297235 L186.905793,83.1297235 Z M197.146664,83.0172011 C197.285642,85.2503478 199.153145,86.678523 201.932686,86.678523 C204.903321,86.678523 206.762139,85.1811034 206.762139,82.792155 C206.762139,80.9138876 205.702439,79.8752151 203.131364,79.2779777 L201.750279,78.9404092 C200.117298,78.5595622 199.457158,78.0488813 199.457158,77.1573541 C199.457158,76.0321243 200.482113,75.296398 202.019547,75.296398 C203.478806,75.296398 204.48639,76.0148135 204.668797,77.1660091 L206.562359,77.1660091 C206.44944,75.0626962 204.590622,73.5825873 202.045605,73.5825873 C199.309495,73.5825873 197.48542,75.0626962 197.48542,77.2871878 C197.48542,79.1221767 198.519063,80.2127835 200.786126,80.7407758 L202.401734,81.1302779 C204.060773,81.5197807 204.790402,82.091051 204.790402,83.0431676 C204.790402,84.1510859 203.643842,84.9560573 202.08035,84.9560573 C200.403939,84.9560573 199.240006,84.2030196 199.074971,83.0172011 L197.146664,83.0172011 Z" id=".JS"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </span>
+                <span class="text-sm font-medium">Requires Next.js</span>
+              </span>
+            </aside>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+            
+            <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white" id="content">Tailwind CSS Next.js - Flowbite</h1>
+            <p class="mb-4 text-lg text-gray-600 dark:text-gray-400">Learn how to install Tailwind CSS with Flowbite for your Next.js project and start developing with the most popular React-based framework built by Vercel</p>
+          </div>
+
+          <div id="mainContent">
+
+            <p><a href="https://nextjs.org/">Next.js</a> is a popular web development framework based on the React library that enables server-side rendering and generating static websites improving development time and website performance.</p>
+<p>This technology is being used by hundreds of thousands of developers and companies such as Vercel, Netflix, TikTok, Twitch, Hulu, Nike and HBO Max since its original release in 2016.</p>
+<p>By following this guide you will learn how to properly set up Tailwind CSS with the <a href="https://flowbite-react.com/">Flowbite React</a> components inside an existing or new Next.js project.</p>
+
+<h2 class="relative group">Requirements
+<span id="requirements" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#requirements" aria-label="Link to this section: Requirements">#</a></h2><p>Make sure that you have <a href="https://nodejs.org/en/">Node.js</a> installed on your computer to be able to install Next.js, Tailwind CSS and Flowbite React using <code>npx</code> and <code>npm</code> commands.</p>
+
+<h2 class="relative group">Create a Next.js project
+<span id="create-a-nextjs-project" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#create-a-nextjs-project" aria-label="Link to this section: Create a Next.js project">#</a></h2><p>Follow the next steps to create a brand new Next.js project using the CLI or a manual installation.</p>
+
+<h3 class="relative group">Using the CLI
+<span id="using-the-cli" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#using-the-cli" aria-label="Link to this section: Using the CLI">#</a></h3><p>Run the following command to scaffold a new Flowbite React project using Next.js:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm create flowbite-react@latest -- --template nextjs
+</code></pre></div><p>Running this will automatically set up Flowbite React in a Next.js project environment.</p>
+
+<h3 class="relative group">Manual install
+<span id="manual-install" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#manual-install" aria-label="Link to this section: Manual install">#</a></h3><ol>
+<li>Run the following command to create a new starter Next.js project:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npx create-next-app@latest
+<span class="nb">cd</span> my-app
+</code></pre></div><p>This command will install all of the necessary dependencies and boilerplate files for a basic Next.js project.</p>
+<ol start="2">
+<li>Run the following command in your terminal to start a local server:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run dev
+</code></pre></div><p>This will make local development accessible via the browser on <code>http://localhost:3000</code>.</p>
+<ol start="3">
+<li>Run the following command to build the project files:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run build
+</code></pre></div><p>Now that you have created a Next.js project you can proceed by setting up Tailwind CSS.</p>
+
+<h2 class="relative group">Install Tailwind CSS
+<span id="install-tailwind-css" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#install-tailwind-css" aria-label="Link to this section: Install Tailwind CSS">#</a></h2><p>Follow the next steps to set up Tailwind CSS inside your Next.js project.</p>
+<ol>
+<li>Run the following command to install Tailwind CSS, Post CSS and Autoprefixer:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm install -D tailwindcss postcss autoprefixer
+</code></pre></div><ol start="2">
+<li>Create a new <code>tailwind.config.js</code> and <code>postcss.config.js</code> file by running the following command:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npx tailwindcss init -p
+</code></pre></div><p>The <code>-p</code> flag will also generate the PostCSS configuration file.</p>
+<ol start="3">
+<li>Configure the template paths inside the Tailwind CSS configuration file:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="cm">/** @type {import(&#39;tailwindcss&#39;).Config} */</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">content</span><span class="o">:</span> <span class="p">[</span>
+    <span class="s2">&#34;./app/**/*.{js,ts,jsx,tsx,mdx}&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;./pages/**/*.{js,ts,jsx,tsx,mdx}&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;./components/**/*.{js,ts,jsx,tsx,mdx}&#34;</span><span class="p">,</span>
+
+    <span class="c1">// Or if using `src` directory:
+</span><span class="c1"></span>    <span class="s2">&#34;./src/**/*.{js,ts,jsx,tsx,mdx}&#34;</span><span class="p">,</span>
+  <span class="p">],</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">extend</span><span class="o">:</span> <span class="p">{},</span>
+  <span class="p">},</span>
+  <span class="nx">plugins</span><span class="o">:</span> <span class="p">[],</span>
+<span class="p">};</span>
+</code></pre></div><p>This is needed for tagging all class names inside the project and including only the used ones in the CSS file.</p>
+<ol start="4">
+<li>Replace the contents of the <code>styles/globals.css</code> file and import the following directives:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">tailwind</span> <span class="nt">base</span><span class="p">;</span>
+<span class="p">@</span><span class="k">tailwind</span> <span class="nt">components</span><span class="p">;</span>
+<span class="p">@</span><span class="k">tailwind</span> <span class="nt">utilities</span><span class="p">;</span>
+</code></pre></div><p>With this last change you should now have a proper Next.js and Tailwind CSS configuration set up.</p>
+<p>Follow the steps of the next section in this tutorial to start using a library of open-source React components based on Tailwind CSS.</p>
+
+<h2 class="relative group">Install Flowbite React
+<span id="install-flowbite-react" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#install-flowbite-react" aria-label="Link to this section: Install Flowbite React">#</a></h2><p>Flowbite React is an open-source set of interactive React components based on the Tailwind CSS utility-first framework featuring interactive elements such as modals, navbars, dropdowns, carousels, and more.</p>
+<ol>
+<li>Install Flowbite React  via NPM by running the following command:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm install flowbite-react
+</code></pre></div><ol start="2">
+<li>Import Flowbite React  and add the <code>plugin</code> and the <code>content</code> path inside your <code>tailwind.config.js</code> file:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">flowbite</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;flowbite-react/tailwind&#34;</span><span class="p">);</span>
+
+<span class="cm">/** @type {import(&#39;tailwindcss&#39;).Config} */</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">content</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// ...
+</span><span class="c1"></span>    <span class="nx">flowbite</span><span class="p">.</span><span class="nx">content</span><span class="p">(),</span>
+  <span class="p">],</span>
+  <span class="nx">plugins</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// ...
+</span><span class="c1"></span>    <span class="nx">flowbite</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(),</span>
+  <span class="p">],</span>
+<span class="p">};</span>
+</code></pre></div><p>Now that you have successfully installed Flowbite React  you can start using the components from the library.</p>
+
+<h2 class="relative group">Flowbite components
+<span id="flowbite-components" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#flowbite-components" aria-label="Link to this section: Flowbite components">#</a></h2><p>Here&rsquo;s an example of how you can use the alert component by importing it from <code>flowbite-react</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Alert</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;flowbite-react&#34;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">Demo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">Alert</span> <span class="nx">color</span><span class="o">=</span><span class="s2">&#34;info&#34;</span><span class="o">&gt;</span><span class="nx">Alert</span><span class="o">!&lt;</span><span class="err">/Alert&gt;;</span>
+<span class="p">}</span>
+</code></pre></div><p>Here&rsquo;s another example of how you can use the dropdown component:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s2">&#34;use client&#34;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Dropdown</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;flowbite-react&#34;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">Demo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Dropdown</span> <span class="nx">label</span><span class="o">=</span><span class="s2">&#34;Dropdown button&#34;</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Dropdown</span><span class="p">.</span><span class="nx">Item</span><span class="o">&gt;</span><span class="nx">Dashboard</span><span class="o">&lt;</span><span class="err">/Dropdown.Item&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Dropdown</span><span class="p">.</span><span class="nx">Item</span><span class="o">&gt;</span><span class="nx">Settings</span><span class="o">&lt;</span><span class="err">/Dropdown.Item&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Dropdown</span><span class="p">.</span><span class="nx">Item</span><span class="o">&gt;</span><span class="nx">Earnings</span><span class="o">&lt;</span><span class="err">/Dropdown.Item&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Dropdown</span><span class="p">.</span><span class="nx">Item</span><span class="o">&gt;</span><span class="nx">Sign</span> <span class="nx">out</span><span class="o">&lt;</span><span class="err">/Dropdown.Item&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Dropdown&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>Finally, another example on how you can use the navbar component:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s2">&#34;use client&#34;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Navbar</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;flowbite-react&#34;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">Demo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Navbar</span> <span class="nx">fluid</span> <span class="nx">rounded</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Brand</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;https://flowbite.com/&#34;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">img</span>
+          <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://flowbite.com/docs/images/logo.svg&#34;</span>
+          <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;mr-3 h-6 sm:h-9&#34;</span>
+          <span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;Flowbite Logo&#34;</span>
+        <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;self-center whitespace-nowrap text-xl font-semibold dark:text-white&#34;</span><span class="o">&gt;</span>
+          <span class="nx">Flowbite</span>
+        <span class="o">&lt;</span><span class="err">/span&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Navbar.Brand&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Toggle</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Collapse</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;/navbars&#34;</span> <span class="nx">active</span><span class="o">&gt;</span>
+          <span class="nx">Home</span>
+        <span class="o">&lt;</span><span class="err">/Navbar.Link&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;/navbars&#34;</span><span class="o">&gt;</span><span class="nx">About</span><span class="o">&lt;</span><span class="err">/Navbar.Link&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;/navbars&#34;</span><span class="o">&gt;</span><span class="nx">Services</span><span class="o">&lt;</span><span class="err">/Navbar.Link&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;/navbars&#34;</span><span class="o">&gt;</span><span class="nx">Pricing</span><span class="o">&lt;</span><span class="err">/Navbar.Link&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Navbar</span><span class="p">.</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;/navbars&#34;</span><span class="o">&gt;</span><span class="nx">Contact</span><span class="o">&lt;</span><span class="err">/Navbar.Link&gt;</span>
+      <span class="o">&lt;</span><span class="err">/Navbar.Collapse&gt;</span>
+    <span class="o">&lt;</span><span class="err">/Navbar&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>To learn more about Flowbite React make sure to check out to the <a href="https://github.com/themesberg/flowbite-react">repository</a> and the <a href="https://flowbite-react.com/docs/getting-started/introduction">documentation</a>.</p>
+
+<h2 class="relative group">Next.js starter project
+<span id="nextjs-starter-project" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#nextjs-starter-project" aria-label="Link to this section: Next.js starter project">#</a></h2><p>The open-source community from Flowbite has created a few starter templates that you can find on GitHub or Stackblitz to get you started with the Tailwind CSS, React, Next.js and Flowbite stack:</p>
+<ul>
+<li><a href="https://github.com/themesberg/flowbite-react-template-nextjs">Starter template on GitHub</a></li>
+<li><a href="https://stackblitz.com/edit/flowbite-react-template-nextjs">Starter template on StackBlitz</a></li>
+</ul>
+
+<h2 class="relative group">More examples
+<span id="more-examples" class="absolute -top-[140px]"></span> <a class="ml-2 text-blue-700 opacity-0 transition-opacity dark:text-blue-500 group-hover:opacity-100" href="#more-examples" aria-label="Link to this section: More examples">#</a></h2><p>You can additionally check out the <a href="https://flowbite.com/pro/">pro version of Flowbite</a> to get access to over 300+ blocks, templates and an admin dashboard coded with Flowbite React and Tailwind CSS.</p>
+
+
+            <aside class="flex mt-6 mb-8 font-medium leading-6" aria-label="Previous and next page navigation">
+              
+                <a class="flex items-center justify-center mr-8 text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="../react/index.html"><svg class="w-3.5 h-3.5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                </svg>React</a>
+              
+              
+              <a class="flex items-center justify-center ml-auto text-right text-gray-500 transition-colors duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" href="../vue/index.html">Vue<svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg></a>
+              
+            </aside>
+
+            <aside class="p-4 my-8 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700" aria-label="Subscribe to the Flowbite newsletter">
+              <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
+              <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified when a new component is added to Flowbite? Sign up for our newsletter and you'll be among the first to find out about new features, components, versions, and tools.</p>
+              <script src="../../../../f.convertkit.com/ckjs/ck.5.js"></script>
+              <form
+                  action="https://app.convertkit.com/forms/4692392/subscriptions"
+                  class="seva-form formkit-form"
+                  method="post"
+                  data-sv-form="4692392"
+                  data-uid="344e3b5c48"
+                  data-format="inline"
+                  data-version="5"
+                  data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                  min-width="400 500 600 700 800"
+              >
+                  <div data-style="clean" class="flex items-end mb-3">
+                      <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                      <div data-element="fields" data-stacked="false" class="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields">
+                          <div class="relative w-full mr-3 formkit-field">
+                              <label for="member_email" class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                              <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                  <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                                  <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                                </svg>
+                              </div>
+                              <input
+                                  id="member_email"
+                                  class="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                  name="email_address"
+                                  aria-label="Email Address"
+                                  placeholder="Your email address..."
+                                  required=""
+                                  type="email"
+                              />
+                          </div>
+                          <button data-element="submit" class="formkit-submit">
+                              <div class="formkit-spinner">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                              </div>
+                              <span class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</span>
+                          </button>
+                      </div>
+                  </div>
+              </form>
+              <div class="text-sm font-medium text-gray-500 dark:text-gray-300">By subscribing, you agree with ConvertKit's <a rel="nofollow" href="https://convertkit.com/terms" class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a> and <a rel="nofollow" class="text-blue-600 hover:underline dark:text-blue-500" href="https://convertkit.com/privacy">Privacy Policy</a>.</div>
+            </aside>
+
+          </div>
+        </div>
+
+        
+        <div class="flex-none hidden w-64 pl-8 mr-8 xl:text-sm xl:block">
+          
+          <div class="flex overflow-y-auto sticky top-28 flex-col justify-between pt-10 pb-6 h-[calc(100vh-5rem)]">
+            <div class="mb-8">
+              <h4 class="pl-2.5 mb-2 text-sm font-semibold tracking-wide text-gray-900 uppercase dark:text-white lg:text-xs">On this page</h4>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#create-a-nextjs-project">Create a Next.js project</a>
+      <ul>
+        <li><a href="#using-the-cli">Using the CLI</a></li>
+        <li><a href="#manual-install">Manual install</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-tailwind-css">Install Tailwind CSS</a></li>
+    <li><a href="#install-flowbite-react">Install Flowbite React</a></li>
+    <li><a href="#flowbite-components">Flowbite components</a></li>
+    <li><a href="#nextjs-starter-project">Next.js starter project</a></li>
+    <li><a href="#more-examples">More examples</a></li>
+  </ul>
+</nav>
+              
+              <aside class="w-52 mt-6 mx-auto border-t border-gray-200 dark:border-gray-700 pt-8">
+                <a href="https://www.enhanceui.com/?ref=flowbite-sidebar" class="block rounded-lg" rel="nofollow noopener noreferrer" target="_blank"> 
+                  <img src="https://flowbite.com/docs/images/book-light.svg" class="shadow mb-3 w-36 dark:hidden" alt="Enhance UI book cover light mode">
+                  <img src="https://flowbite.com/docs/images/book-dark.svg" class="shadow mb-3 w-36 hidden dark:block" alt="Enhance UI book cover dark mode">
+                  <h4 class="text-base font-semibold text-gray-900 mb-1.5 dark:text-white">Learn Design Concepts</h4>
+                  <p class="text-gray-500 dark:text-gray-400">Make better Flowbite pages by learning the fundamentals of design</p>
+                  <div class="border-t border-gray-200 dark:border-gray-700 pt-2 mt-2">
+                    <h5 class="font-medium text-gray-900 dark:text-white">Teach Me Design</h5>
+                    <p class="text-gray-500 dark:text-gray-400">by Adrian Twarog</p>
+                  </div>
+                </a>
+              </aside>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+</div>
+
+
+  <aside class="fixed z-50 hidden right-5 bottom-5 sm:block">
+    <script async type="text/javascript" src="../../../../cdn.carbonads.com/carbon2a28.js?serve=CK7D4KQE&amp;placement=flowbitedesign" id="_carbonads_js"></script>
+  </aside>
+
+<aside id="copied-code-alert" class="fixed z-50 p-4 hidden transition-opacity bg-gray-100 border border-gray-200 rounded-lg opacity-0 bottom-5 left-5 dark:border-gray-700 shadow-sm dark:bg-gray-800" aria-label="Copied to clipboard success message">
+    <svg class="w-5 h-5 text-green-700 dark:text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+    <p class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">Copied code to clipboard!</p>
+</aside>
+
+<footer class="py-12 bg-gray-50 xl:pt-24 dark:bg-gray-800">
+    <div class="w-full px-4 mx-auto max-w-8xl">
+        <div class="grid gap-12 xl:grid-cols-6 xl:gap-24">
+            <div class="col-span-2">
+                <a href="https://flowbite.com/" class="flex mb-5">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                </a>
+                <p class="max-w-lg mb-3 text-gray-600 dark:text-gray-400">Flowbite is a library of interactive UI components built with Tailwind CSS that can get you started building websites faster and more efficiently.</p>
+                <p class="max-w-lg text-gray-600 dark:text-gray-400">Code licensed <a href="https://github.com/themesberg/flowbite/blob/main/LICENSE.md" class="text-blue-600 dark:text-blue-500 hover:underline" rel="nofollow">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" class="text-blue-600 hover:underline dark:text-blue-500" rel="nofollow">CC BY 3.0</a>.</p>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Resources</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Documentation</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/blocks/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite Blocks</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/figma/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Figma Design</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/icons/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite Icons</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://chat.openai.com/g/g-y7yC35HB9-flowbite-gpt"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Flowbite GPT</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/pro/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Pro version</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Help and support</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/contact/" rel="noreferrer nofollow"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Contact us</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://github.com/themesberg/flowbite/discussions" rel="noreferrer nofollow"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github discussions</a>
+                    </li>
+                    <li class="mb-4 flex items-center">
+                        <a href="https://flowbite.com/work-with-us/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Hire us </a>
+                        <span class='bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-2'>
+                        New
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Follow us</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://discord.gg/4eeurUVvTy" rel="noreferrer nofollow"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Discord</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://github.com/themesberg/flowbite"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Github</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://twitter.com/zoltanszogyenyi" rel="noreferrer nofollow"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Twitter/X</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://www.linkedin.com/in/zoltanszogyenyi/" rel="noreferrer nofollow"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white">Legal</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/license/" class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">License (EULA)</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/privacy-policy/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Privacy Policy</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/terms-and-conditions/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Terms & Conditions</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/brand/"
+                            class="font-medium text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline">Brand guideline</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
+        <span class="block text-center text-gray-600 dark:text-gray-400 font-">© 2019-<span id="currentYear"></span> <a href="https://flowbite.com/">Flowbite™</a> is a registered trademark. All Rights Reserved.
+        </span>
+    </div>
+</footer>
+
+  <script src="../../../../cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+    integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../flowbite.min5d5d.js?v=2.5.1a"></script>
+<script src="../../docs5d5d.js?v=2.5.1a"></script>
+
+  
+
+</body>
+
+
+<!-- Mirrored from flowbite.com/docs/getting-started/next-js/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 16:54:56 GMT -->
+</html>
